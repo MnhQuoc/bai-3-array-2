@@ -8,14 +8,15 @@
 
 </body>
 <script>
-    const charArray = ['a', '1', '9', '2', 'c', '3', 'd', '4', 'e'];
+    const charArray = ['a', '1', '91', '2', 'c', '3', 'd', '4', 'e', '!', '-3'];
     let count = 0;
     for (let i = 0; i < charArray.length; i++) {
-        if ( charArray[i] !== '') {
+        parseInt(charArray[i]);
+        if (charArray[i] >= 0 || charArray[i] < 0) {
             count++;
         }
     }
-    document.write("Mảng có "+count+" ký tự")
+    document.write("Mảng có " + count + " ký tự số")
 
 </script>
 </html>
